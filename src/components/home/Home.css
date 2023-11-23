@@ -1,0 +1,107 @@
+.home{
+    justify-content: center;
+}
+.topbar{
+    display: flex;
+    justify-content: space-between;
+}
+.profile{
+    display: flex;
+    margin: 10px;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.notification{
+    color: orange;
+}
+.theme{
+    color: rgb(46, 157, 226);
+}
+
+
+.admin-name{
+    font-weight: 600;
+    font-size: 18px;
+    font-family:serif;
+    color: rgb(226, 68, 68)
+}
+
+.btn-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.left {
+  border: none;
+  cursor: pointer;
+}
+
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.icon-button .MuiSvgIcon-root {
+  font-size: 18px;
+  padding: 8px;
+  border-radius: 100%;
+}
+
+.icon-button .MuiSvgIcon-root:hover {
+  font-size: 18px;
+  background-color: grey;
+  color: white;
+  padding: 8px;
+  border-radius: 100%;
+}
+
+.icon-button :hover {
+  color: rebeccapurple;
+  border-radius: 50%;
+}
+
+.delete-btn {
+  color: white;
+  background-color: rgba(222, 82, 82, 0.933);
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  margin: 10px;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.delete-icon {
+  color: rgb(245, 93, 93);
+}
+
+.page-number {
+  margin-top: 20px;
+  margin: 0 5px;
+  padding: 5px 10px;
+  border-radius: 100%;
+  cursor: pointer;
+  background-color: rgba(61, 108, 203, 0.852);
+  height: 30px;
+  align-items: center;
+  text-align: center;
+  border: none;
+}
+
+.page-number.active {
+  background-color: rgba(222, 82, 82, 0.933);
+  color: #fff;
+}
+
+.ellipsis {
+  margin: 0 5px;
+}
