@@ -208,8 +208,10 @@ function Home() {
   const handleThemeToggle = () => {
     setIsDarkMode(!isDarkMode);
   };
+  const darkThemeClass = isDarkMode ? "dark-theme" : "light-theme";
+
   return (
-    <div className="home">
+    <div className={`home ${darkThemeClass}`}>
       <div className="topbar">
         <div className="searchbar">
           <input
@@ -278,6 +280,12 @@ function Home() {
         hideFooterPagination
         onSelectionModelChange={handleRowSelection}
         selectionModel={selectedRows}
+        classes={{
+          root: `${darkThemeClass}`,
+          cell: `${darkThemeClass}`,
+          header: `${darkThemeClass}`,
+          columnHeader:`${darkThemeClass}`,
+        }}
       />
       <div className="btn-container">
         <div className="left">
@@ -363,7 +371,8 @@ function Home() {
           <span>Total Rows: {totalRowCount}</span>
         </div>
       </div>
-    </div>
+      </div>
+
   );
 }
 

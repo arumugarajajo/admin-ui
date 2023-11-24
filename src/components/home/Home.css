@@ -5,6 +5,35 @@
     display: flex;
     justify-content: space-between;
 }
+.dark-theme{
+  background-color: #333;
+  color: white;
+  fill: white;
+  & .MuiDataGrid-cell,
+  & .MuiDataGrid-colCell {
+    color: white;
+  }
+  & .MuiDataGrid-colCellTitle {
+    color: white; 
+  }
+  & .MuiDataGrid-checkboxInput {
+    color: white;
+  }
+}
+.light-theme {
+  background-color: white;
+  color: black;
+  fill: black; 
+  & .MuiDataGrid-cell,
+  & .MuiDataGrid-colCell {
+    color: black; 
+  }
+  & .MuiDataGrid-colCellTitle {
+    color: black; 
+  }
+  & .MuiDataGrid-checkboxInput {
+    color: black;}
+}
 .profile{
     display: flex;
     margin: 10px;
